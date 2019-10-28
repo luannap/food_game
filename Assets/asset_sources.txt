@@ -1,0 +1,10 @@
+Assets not including sound effects provided by creators on itch.io. Filenames and links to creator pages are below:
+
+"FOOD.png": 
+	https://vectorpixelstar.itch.io/food
+
+"Trees.png, Trees_Outlined.png, Trees_Alt.png, Trees_Alt_Outlined.png": 
+	https://jestan.itch.io/trees
+
+"Chest_Locked.png, Chest.png, Key.png, Coin_Sparkle.png, Coin.png"
+	https://jan-schneider.itch.io/chest-and-coins
