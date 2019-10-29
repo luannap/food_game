@@ -1,0 +1,15 @@
+The player chooses a character (male or female, both college-aged [we determined college-aged to be between 19 and 25 years old]). Instead of acquiring points for a grade, the player character must stay within a calorie threshold. 
+
+We will use the 
+The threshold for a moderately active male is 2,800 calories; for a moderately active female, it is 2,200 (according to health.gov). The character the player chooses will determine the threshold.
+
+The player starts with 0 calories and by touching foods, the calorie count will go up. As the player moves, however, the calories will continually decrease. The levels are breakfast, lunch, and dinner, so each level requires a different threshold for calories. (For example, for a male character, the breakfast level threshold would be 700 calories, the lunch threshold would be 900 calories, and the dinner would be 1200)
+
+When the player goes too far above the threshold, there will be negative effects to the player (slowing down speed, lowering jump height). 
+
+The calories can be brought down to the threshold when the player reaches a tool/vehicle/or device that can help bring calories down (such as a gym membership card, a bicycle, or a running shoe). 
+
+If the player goes too long without eating, they will be on a timer, once the timer runs out, the player passes out and it's game over.
+
+The obstacles are calorie-dense, processed, and/or sugar-filled foods. The player can choose to touch the obstacles for a calorie boost, but it will have a negative effect after a certain amount of time. It is recommended that the player eats healthy foods.
+
