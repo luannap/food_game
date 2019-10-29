@@ -1,6 +1,6 @@
 The player chooses a character (male or female, both college-aged [we determined college-aged to be between 19 and 25 years old]). Instead of acquiring points for a grade, the player character must stay within a calorie threshold. 
 
-We will use the 
+We will use the health.gov dietary guidelines for daily calorie intake. 
 The threshold for a moderately active male is 2,800 calories; for a moderately active female, it is 2,200 (according to health.gov). The character the player chooses will determine the threshold.
 
 The player starts with 0 calories and by touching foods, the calorie count will go up. As the player moves, however, the calories will continually decrease. The levels are breakfast, lunch, and dinner, so each level requires a different threshold for calories. (For example, for a male character, the breakfast level threshold would be 700 calories, the lunch threshold would be 900 calories, and the dinner would be 1200)
