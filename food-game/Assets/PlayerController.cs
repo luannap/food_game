@@ -6,12 +6,12 @@ public class PlayerController : MonoBehaviour
 {
     public float movement;
     public Rigidbody2D rigid;
-    public float speed = 7.0f;
+    public float speed = 5.0f;
     public bool isFacingRight = true;
     bool jumpPressed = false;
-    public float jumpForce = 500.0f;
-    public LayerMask whatIsGround; //what should be considered ground for jumping off
-    public float groundDistance = 1.5f;
+    public float jumpForce = 4.0f;
+    public LayerMask groundLayer; //what should be considered ground for jumping off
+    public float groundDistance = 0.12f;
     public bool grounded;
 
     // Start is called before the first frame update
@@ -19,6 +19,7 @@ public class PlayerController : MonoBehaviour
     {
         if (rigid == null)
             rigid = GetComponent<Rigidbody2D>();
+        groundLayer = LayerMask.GetMask("Ground");
         
     }
 
@@ -27,7 +28,7 @@ public class PlayerController : MonoBehaviour
         //called once per frame, used for user input
     {
         movement = Input.GetAxis("Horizontal");
-        if (Input.GetButtonDown("Jump"))
+        if (Input.GetKeyDown(KeyCode.UpArrow))
         {
             jumpPressed = true;
         }
@@ -57,8 +58,8 @@ public class PlayerController : MonoBehaviour
 
     void Jump()
     {
-        rigid.velocity = new Vector2(rigid.velocity.x, 0);
-        rigid.AddForce(new Vector2(0, jumpForce));
+        rigid.velocity = new Vector2(rigid.velocity.x, jumpForce);
+        //rigid.AddForce(new Vector2(0, jumpForce));
         jumpPressed = false;
     }
     bool isOnGround()
@@ -70,8 +71,8 @@ public class PlayerController : MonoBehaviour
 
         Debug.DrawRay(position, direction, Color.green);
 
-        RaycastHit2D hit = Physics2D.Raycast(position, direction, groundDistance, whatIsGround);
-        if (hit.collider == null)
+        RaycastHit2D hit = Physics2D.Raycast(position, direction, groundDistance, groundLayer);
+        if (hit.collider != null)
         {
             grounded = true;
         }
