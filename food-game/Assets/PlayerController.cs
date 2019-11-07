@@ -14,6 +14,9 @@ public class PlayerController : MonoBehaviour
     public float groundDistance = 0.12f;
     public bool grounded;
 
+    public Animator animator;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -31,6 +34,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.UpArrow))
         {
             jumpPressed = true;
+            animator.SetBool("isJumping", true);
         }
     }
 
@@ -43,7 +47,10 @@ public class PlayerController : MonoBehaviour
             Flip();
         }
         if (jumpPressed && isOnGround())
+        {
+            
             Jump();
+        }
     }
 
     void Flip()
@@ -61,6 +68,7 @@ public class PlayerController : MonoBehaviour
         rigid.velocity = new Vector2(rigid.velocity.x, jumpForce);
         //rigid.AddForce(new Vector2(0, jumpForce));
         jumpPressed = false;
+        
     }
     bool isOnGround()
     //see, e.g.: https://kylewbanks.com/blog/unity-2d-checking-if-a-character-or-object-is-on-the-ground-using-raycasts
@@ -72,14 +80,17 @@ public class PlayerController : MonoBehaviour
         Debug.DrawRay(position, direction, Color.green);
 
         RaycastHit2D hit = Physics2D.Raycast(position, direction, groundDistance, groundLayer);
-        if (hit.collider != null)
+        if (hit.collider != null )
         {
             grounded = true;
         }
         else
         {
             grounded = false;
+            animator.SetBool("isJumping", false);
         }
         return grounded;
     }
+
+
 }

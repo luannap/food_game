@@ -120,6 +120,12 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!95 &121578779 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 889515164128803630, guid: c1ff0d9b59b81444f95fcf8ce3753f63,
+    type: 3}
+  m_PrefabInstance: {fileID: 889515163883204743}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1109,7 +1115,7 @@ PrefabInstance:
     - target: {fileID: 889515164128803631, guid: c1ff0d9b59b81444f95fcf8ce3753f63,
         type: 3}
       propertyPath: m_Name
-      value: boy_run_0
+      value: boy
       objectReference: {fileID: 0}
     - target: {fileID: 889515164128803628, guid: c1ff0d9b59b81444f95fcf8ce3753f63,
         type: 3}
@@ -1174,7 +1180,7 @@ PrefabInstance:
     - target: {fileID: 889515164128803626, guid: c1ff0d9b59b81444f95fcf8ce3753f63,
         type: 3}
       propertyPath: groundLayer.m_Bits
-      value: 0
+      value: 256
       objectReference: {fileID: 0}
     - target: {fileID: 889515164128803626, guid: c1ff0d9b59b81444f95fcf8ce3753f63,
         type: 3}
@@ -1184,7 +1190,7 @@ PrefabInstance:
     - target: {fileID: 889515164128803626, guid: c1ff0d9b59b81444f95fcf8ce3753f63,
         type: 3}
       propertyPath: speed
-      value: 5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 889515164128803626, guid: c1ff0d9b59b81444f95fcf8ce3753f63,
         type: 3}
@@ -1196,5 +1202,10 @@ PrefabInstance:
       propertyPath: groundDistance
       value: 0.12
       objectReference: {fileID: 0}
+    - target: {fileID: 889515164128803626, guid: c1ff0d9b59b81444f95fcf8ce3753f63,
+        type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 121578779}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1ff0d9b59b81444f95fcf8ce3753f63, type: 3}
