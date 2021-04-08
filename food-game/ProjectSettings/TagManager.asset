@@ -3,7 +3,14 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - showInPlayMode
+  - showInPauseMode
+  - collectible
+  - DeadZone
+  - Goal
+  - persistent
+  - newhigh
   layers:
   - Default
   - TransparentFX
@@ -55,4 +62,7 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 214011785
+    locked: 0
+  - name: Caloris Bar Helper
+    uniqueID: 1956400251
     locked: 0

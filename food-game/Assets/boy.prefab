@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 889515164128803626}
   - component: {fileID: 889515164128803627}
   m_Layer: 0
-  m_Name: boy_run_0
+  m_Name: boy
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -139,7 +139,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movement: 0
   rigid: {fileID: 0}
-  speed: 4
   isFacingRight: 1
   jumpForce: 5
   groundLayer:
@@ -147,6 +146,8 @@ MonoBehaviour:
     m_Bits: 0
   groundDistance: 1.5
   grounded: 0
+  JumpAudio: {fileID: 0}
+  Running: {fileID: 0}
   animator: {fileID: 0}
 --- !u!70 &889515164128803627
 CapsuleCollider2D:
@@ -161,6 +162,6 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.15999998, y: 0.20999998}
+  m_Offset: {x: -0.0005876896, y: 0.011663903}
+  m_Size: {x: 0.1940776, y: 0.24499162}
   m_Direction: 0
